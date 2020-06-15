@@ -3,5 +3,5 @@
 def true_equations(arr)
 	while 
 end
-
+#irb eval
 true_equations(["1+1=2", "2+2=3", "5*5=10", "3/3=1"])
