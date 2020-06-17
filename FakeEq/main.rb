@@ -1,7 +1,33 @@
-#https://edabit.com/challenge/DwdT9ocZLemZvrpkK
+# https://edabit.com/challenge/DwdT9ocZLemZvrpkK
 
 def true_equations(arr)
-	while 
+
+    # while i < arr.length do
+        
+    #     arr[i].split("=").each do|c|
+
+    #         puts c
+        
+    #     end
+
+     
+    #     i = i + 1
+    # end
 end
 #irb eval
-true_equations(["1+1=2", "2+2=3", "5*5=10", "3/3=1"])
+def true_equations(arr)
+    correct = []
+    arr.each do |calculation|
+        splittedcalc = calculation.split("=")
+        
+        if eval(splittedcalc.first) == eval(splittedcalc.last)
+            correct << calculation
+        end
+        
+        
+        
+    end
+    return correct
+end
+
+true_equations((["1+1=3", "3-1=1"]), ))
